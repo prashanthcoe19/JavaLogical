@@ -1,3 +1,4 @@
+
 /* 
 Write a function that accepts a character array, a zero-based start position and a length. 
 It should return a character array containing containing lengthcharacters starting with the start
