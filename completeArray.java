@@ -30,7 +30,7 @@ If you are writing in C or C++, the function signature is
 
 public class completeArray {
     public static void main(String[] args) {
-        int[] arr = { 2, 6, 3, 4 };
+        int[] arr = { 2, 2, 3, 6, 5, 4 };
         isEven(arr);
     }
 
@@ -53,21 +53,20 @@ public class completeArray {
     }
 
     public static int isEven(int[] arr) {
-        int e1 = 2;
+        int e1 = 0;
         int e2 = 0;
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0) {
                 if (count == 0) {
                     /* only runs until and only when first even nos in array is found */
-                    if (arr[i] > e1) {
-                        e2 = arr[i];
-                        count++;
-                    }
+                    e1 = arr[i];
+                    count++;
                 }
                 /* runs when first even nos in array is found */
                 if (count == 1) {
-                    e2 = e2 > arr[i] ? e2 : arr[i];
+                    e1 = e1 < arr[i] ? e1 : arr[i];
+                    e2 = arr[i] > e2 ? arr[i] : e2;
                 }
             }
         }
