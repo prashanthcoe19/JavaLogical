@@ -1,7 +1,7 @@
 public class smallFactors {
     public static void main(String[] args) {
-        int k = 12;
-        int n = 24;
+        int k = 10;
+        int n = 22;
         sFactors(k, n);
     }
 
