@@ -33,7 +33,7 @@ public class fillArray {
         for (int i = 0; i < n; i++) {
             newArray[i] = arr[j];
             j++;
-            if (k == j) {
+            if (j == k) {
                 j = 0;
             }
         }

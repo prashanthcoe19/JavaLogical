@@ -1,6 +1,6 @@
 public class magicArray {
     public static void main(String[] args) {
-        int[] arr = { 13, 5, -5, 5, 3 };
+        int[] arr = { 12, 4, 4, 4, 4 };
         magic(arr);
     }
 
@@ -11,7 +11,7 @@ public class magicArray {
                 sum = sum + a[i];
             }
         }
-        if (a[0] == sum || (a[0] == 0 & sum == 0)) {
+        if (a[0] == sum || (a[0] == 0 & sum == 0) || (isPrime(a[0]) == 1 & sum == 0)) {
             System.out.println("Magic Array");
             return 1;
         }

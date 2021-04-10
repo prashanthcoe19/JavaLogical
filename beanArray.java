@@ -15,7 +15,7 @@
 */
 public class beanArray {
     public static void main(String[] args) {
-        int[] arr = { 2, 10, 9, 3 };
+        int[] arr = { 2, 2, 2, 3, 3, 3, 3 };
         if (bean(arr) == 1) {
             System.out.println("it is a bean array");
         } else {
